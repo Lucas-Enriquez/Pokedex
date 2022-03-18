@@ -1,0 +1,141 @@
+
+.poke-grid-container {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    align-items: center;
+}
+
+.poke-img-container {
+    display: flex;
+    // width: 200px;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 50%;
+        background-image: url('../img/blob.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.poke-card-container {
+    font-family: $fuenteUno;
+    text-align: center;
+    width: 90%;
+    height: 100%;
+    max-width: 700px;
+    padding: 10px;
+    background-color: #222;
+    color: #fafafa;
+    border-radius: 4px;
+    transition: background-color .3s;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #222;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    color: #222;
+    border: 1px solid #222;
+}
+
+
+.poke-card-container img {
+    transition: transform .3s;
+
+    border-radius: 50%;
+}
+
+.poke-card-container:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+    img {
+        transform: scale(1.03);
+    }
+}
+
+.stats-container {
+    background-color: #fafafa;
+    border: 1.5px solid #222;
+    width: 80%;
+    max-width: 630px;
+    height: 80%;
+    max-height: 700px;
+    position: fixed;
+    color: #222;
+    left: 0; 
+    right: 0; 
+    top: 10%;
+    margin-left: auto; 
+    margin-right: auto; 
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 4px;
+    overflow: auto;
+    h5 {
+        font-family: $fuenteUno;
+        font-size: 28px;
+        font-weight: 100;
+    }
+
+    span {
+        font-family: $fuenteUno;
+        font-size: 28px;
+        font-weight: 100;
+    }
+}
+
+.poke-stats {
+    font-family: $fuenteUno;
+    width: 90%;
+}
+
+.poke-stats div {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.pagination {
+    justify-content: flex-end;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+
+.close-stats {
+    text-align: right;
+    font-size: 18px;
+    color: #222;
+    align-self: flex-end;
+}
+
+.close-stats:hover {
+    color: rgba(34, 34, 34, 0.5);
+    cursor: pointer;
+}
+
+
+.footer-2 {
+    background-color: #222;
+    text-align: center;
+    font-family: $fuenteUno;
+    width: 100%;
+    padding: 15px;
+    color: #fafafa;
+    justify-content: center;
+
+    p {
+        margin: 0;
+    }
+}

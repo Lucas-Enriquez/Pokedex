@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <title>Pókedex</title>
+</head>
+
+<body>
+    <div class="nav-container">
+        <nav class="nav">
+            <ul>
+                <a href="index.html"><li>Manual Pokémon Search</li></a>
+                <a href="pokemon-list.html"><li>Pokémon List</li></a>
+            </ul>
+        </nav>
+    </div>
+    <h1>Pókedex - Search a Pokémon!</h1>
+    <form action="" class="form">
+        <input type="text" name="pokemon" autocomplete="off">
+
+        <div data-poke-card class="poke-card">
+            <div data-poke-name>Pokedex</div>
+            <div data-poke-img-container class="img-container">
+                <img data-poke-img class="poke-img" src="img/poke-silueta.png" alt="">
+            </div>
+            <div data-poke-id></div>
+            <div data-poke-types class="poke-types"></div>
+            <div data-poke-stats class="poke-stats"></div>
+        </div>
+    </form>
+    <footer class="footer">
+        <p>Made with ❤ by Lucas</p>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

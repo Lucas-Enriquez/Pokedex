@@ -1,0 +1,28 @@
+.nav-container {
+    background-color: #222;
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 0 !important;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        padding: 20px;
+        transition: background-color .3s;
+    }
+
+    nav ul li:hover {
+        background-color: rgb(51, 51, 51);
+    }
+    a {
+        list-style: none;
+        text-decoration: none;
+        color: #fafafa;
+        font-family: $fuenteUno;
+    }
+}
