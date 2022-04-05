@@ -88,7 +88,6 @@ document.addEventListener('click', (e)=> {
 })
 
 async function addPokemon(e) {
-  // console.log(e.dataset.id);
   const id = e.dataset.id;
   try {
     const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
@@ -128,7 +127,6 @@ async function showStats(pokemon) {
   templateStats.querySelector("h5").textContent =
     name.charAt(0).toUpperCase() + name.slice(1);
   pokemon.stats.forEach((stat) => {
-    // console.log(stat);
 
     const statElement = document.createElement("div");
     const statElementName = document.createElement("div");
@@ -139,7 +137,6 @@ async function showStats(pokemon) {
     statElement.appendChild(statElementName);
     statElement.appendChild(statElementAmount);
     pokeStatsDiv.appendChild(statElement);
-    // templateStats.querySelectorAll('span')
 
   });
 
