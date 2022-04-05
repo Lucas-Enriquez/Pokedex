@@ -80,7 +80,6 @@ gridContainer.addEventListener("click", (e) => {
 
 document.addEventListener('click', (e)=> {
   if(e.target.classList.contains('fa-xmark')) {
-    console.log('has dao clic');
 
     const statsContainer = document.querySelector(".stats-container");
     statsContainer.remove();
